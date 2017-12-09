@@ -4,7 +4,7 @@ body {
   font-size: 16px;
   line-height: 1.7;
   color: #777;
-  background: #fff;
+  background-image: url(images/library_bg.jpg);
 }
 h1 { 
   font-family: Arial, sans-serif;
@@ -47,6 +47,24 @@ h4, h5, h6 {
   margin-left: auto;
   margin-right: auto;
 }
+.btn-sm {
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  background: #6b6965;
+  padding: 10px 20px 10px 20px;
+  border: solid #dbdbdb 2px;
+  text-decoration: none;
+}
+
+.btn-sm:hover {
+  background: #aeb8bf;
+  text-decoration: none;
+}
+
 .content { 
   position: relative;
 
