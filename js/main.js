@@ -1,4 +1,18 @@
 $(document).ready(function() {
+
+    $("#button").click(function() {
+            $('html, body').animate({
+        scrollTop: $("#how-it-works").offset().top
+        }, 2000);
+    });
+
+    $(function() {
+      $('a[href*=#]').on('click', function(e) {
+        e.preventDefault();
+        $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+      });
+    });
+
     $('#contact_form').bootstrapValidator({
         // To use feedback icons, ensure that you use Bootstrap v3.1.0 or later
         feedbackIcons: {
@@ -105,4 +119,8 @@ $(document).ready(function() {
                 console.log(result);
             }, 'json');
         });
+
+
+        
 });
+
