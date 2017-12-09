@@ -6,12 +6,7 @@ $(document).ready(function() {
         }, 2000);
     });
 
-    $(function() {
-      $('a[href*=#]').on('click', function(e) {
-        e.preventDefault();
-        $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
-      });
-    });
+   
 
     $('#contact_form').bootstrapValidator({
         // To use feedback icons, ensure that you use Bootstrap v3.1.0 or later
@@ -91,16 +86,11 @@ $(document).ready(function() {
                      }
                 }
             },
-             department: {
-                validators: {
-                    notEmpty: {
-                        message: 'Please select your Department/Office'
-                    }
-                }
-            },
-                }
+          
+            }
             }
         })
+    
         .on('success.form.bv', function(e) {
             $('#success_message').slideDown({ opacity: "show" }, "slow") // Do something ...
                 $('#contact_form').data('bootstrapValidator').resetForm();
@@ -124,3 +114,10 @@ $(document).ready(function() {
         
 });
 
+$(document).on('click', 'a[href^="#"]', function (event) {
+    event.preventDefault();
+
+    $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 500);
+    });
