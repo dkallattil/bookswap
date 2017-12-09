@@ -77,6 +77,26 @@ h6 {
   background: #aeb8bf;
   text-decoration: none;
 }
+.btn-lg {
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  background: #6b6965;
+  padding: 10px 20px 10px 20px;
+  border: solid #dbdbdb 2px;
+  text-decoration: none;
+  position: absolute;
+  top: 350px;
+  left: 510px;
+}
+
+.btn-lg:hover {
+  background: #aeb8bf;
+  text-decoration: none;
+}
 
 .content { 
   position: relative;
@@ -153,7 +173,7 @@ h6 {
   top: 0;
   left: 0;
   right: 0;
-  background: rgba(229, 231, 233, 0.5);
+  background: rgba(166, 172, 175, 0.5);
 }
 .cover a:hover {
   color: white;
