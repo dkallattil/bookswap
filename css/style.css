@@ -77,6 +77,7 @@ h6 {
   background: #aeb8bf;
   text-decoration: none;
 }
+
 .btn-lg {
   -webkit-border-radius: 5;
   -moz-border-radius: 5;
@@ -133,6 +134,11 @@ h6 {
   padding: 0px 10px;
   color: #000;
 }
+
+.nav a:hover{
+  color: white;
+  text-decoration: none;
+}
 .nav ul {
   padding: 0;
   margin: 2px 0 0 0;
@@ -184,3 +190,8 @@ h6 {
   z-index: 10;
 }
 #success_message{ display: none;}
+
+.btn-primary-outline {
+  background-color: transparent;
+  border-color: #ccc;
+}
