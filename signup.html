@@ -12,7 +12,6 @@
 		<!-- Bootstrap -->
 		<link rel="stylesheet" href="css/bootstrap.css">
 		<!-- Main.js -->
-
 		<script src="https://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
 
 		<script type="text/javascript">
@@ -52,7 +51,6 @@
 			}
 
 		</script>
-
 	</head>
 	<body>
 
@@ -64,9 +62,6 @@
 						</div>
 						<div>
 							<ul>
-
-								<li><button type="button" class="btn-sm"><a href="signup.html" style="color:#ffffff;">Sign Up</a></button></li></li>
-
 							</ul>
 						</div>
 					</div>
@@ -78,10 +73,8 @@
 				 <div class="container" style="position: relative; margin-top: 7%; margin-left: 32%;">
 
 
-   <form class="well form-horizontal" action=" " method="post" id="contact_form">
-    <fieldset>
 
-      <form class="well form-horizontal" action=" " method="post" id="contact_form">
+      <form class="well form-horizontal" onsubmit="validate()" action="php/signup.php" method="post" id="contact_form">
         <fieldset>
 
           <!-- Text input-->
@@ -91,9 +84,7 @@
             <div class="col-md-4 inputGroupContainer">
               <div class="input-group">
                 <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-
                 <input name="first_name" placeholder="First Name" class="form-control" type="text" required>
-
               </div>
             </div>
           </div>
@@ -106,7 +97,6 @@
               <div class="input-group">
                 <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
                 <input name="last_name" placeholder="Last Name" class="form-control" type="text" required>
-
               </div>
             </div>
           </div>
@@ -118,7 +108,6 @@
             <div class="col-md-4 inputGroupContainer">
               <div class="input-group">
                 <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-
                 <input id="user_name" name="user_name" placeholder="Username" class="form-control" onchange="username_check()" type="text" required>
               </div>
             </div>
@@ -131,9 +120,7 @@
             <div class="col-md-4 inputGroupContainer">
               <div class="input-group">
                 <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-
                 <input id="newPass" name="user_password" placeholder="Password" class="form-control" type="password" required>
-
               </div>
             </div>
           </div>
@@ -147,7 +134,6 @@
                       <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
                       <input id="confirmPass" name="confirm_password" placeholder="Confirm Password" class="form-control"
 											 type="password" onchange="checkPass()" required>
-
                     </div>
                   </div>
                 </div>
@@ -170,14 +156,12 @@
                 <div class="alert alert-success" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i> Success!.</div>
 
                 <!-- Button -->
-
                 <div class="form-group" style="text-align: center">
                   <label class="col-md-4 control-label"></label>
                   <div class="col-md-4">
                     <button type="submit" onclick="checkPass()" class="btn btn-warning">SUBMIT <span class="glyphicon glyphicon-send"></span></button>
 										<div style="color: white">Already have an account?</div><a href="login.html">Log In Here</a>
 								  </div>
-
                 </div>
 
         </fieldset>

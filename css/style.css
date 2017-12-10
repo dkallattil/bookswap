@@ -77,7 +77,6 @@ h6 {
   background: #aeb8bf;
   text-decoration: none;
 }
-
 .btn-lg {
   -webkit-border-radius: 5;
   -moz-border-radius: 5;
@@ -133,11 +132,6 @@ h6 {
 .nav a {
   padding: 0px 10px;
   color: #000;
-}
-
-.nav a:hover{
-  color: white;
-  text-decoration: none;
 }
 .nav ul {
   padding: 0;

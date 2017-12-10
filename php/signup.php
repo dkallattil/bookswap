@@ -23,7 +23,7 @@ if($email == ""){
 }
 
 if($conn->query($insertSql)){
-  echo "success";
+  header("Location: ../bookswap.html?login=success");
 }else{
   echo":(";
 }

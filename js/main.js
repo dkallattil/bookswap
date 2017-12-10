@@ -77,12 +77,16 @@ $(document).ready(function() {
                      }
                 }
             },
- 
-            }
+             department: {
+                validators: {
+                    notEmpty: {
+                        message: 'Please select your Department/Office'
+                    }
+                }
+            },
+                }
             }
         })
-
-
         .on('success.form.bv', function(e) {
             $('#success_message').slideDown({ opacity: "show" }, "slow") // Do something ...
                 $('#contact_form').data('bootstrapValidator').resetForm();
@@ -101,10 +105,4 @@ $(document).ready(function() {
                 console.log(result);
             }, 'json');
         });
-
-
-
-        
 });
-
-
