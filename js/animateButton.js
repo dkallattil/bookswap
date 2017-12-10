@@ -1,5 +1,4 @@
-$("button").click(function() {
-    $('html, body').animate({
-        scrollTop: $("#how-it-works").offset().top
- 	}, 2000);
-});
+$('#how-it-works').click(function(){
+    $("html, body").animate({ scrollTop: 0 }, 600);
+    return false;
+ });

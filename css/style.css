@@ -191,7 +191,3 @@ h6 {
 }
 #success_message{ display: none;}
 
-.btn-primary-outline {
-  background-color: transparent;
-  border-color: #ccc;
-}
