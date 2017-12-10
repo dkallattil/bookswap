@@ -6,7 +6,7 @@ body {
   color: #777;
   background-image: url(images/library_bg.jpg);
 }
-h1 { 
+h1 {
   font-family: Arial, sans-serif;
   color: white;
   font-size: 16px;
@@ -17,7 +17,7 @@ h1 {
   text-align: center;
   margin-right: auto;
 }
-h2 { 
+h2 {
   font-family: Arial, sans-serif;
   font-size: 12px;
   color: white;
@@ -29,7 +29,7 @@ h2 {
   margin-right: auto;
 }
 
-h3 { 
+h3 {
   font-family: Arial, sans-serif;
   font-size: 12px;
   color: white;
@@ -49,7 +49,7 @@ h4, h5 {
   margin-right: auto;
 }
 
-h6 { 
+h6 {
   font-family: Arial, sans-serif;
   font-size: 12px;
   color: white;
@@ -98,7 +98,7 @@ h6 {
   text-decoration: none;
 }
 
-.content { 
+.content {
   position: relative;
 
 }
@@ -184,4 +184,9 @@ h6 {
   position: relative;
   z-index: 10;
 }
+
+#book_list {
+   border: 1px solid black;
+}
+
 #success_message{ display: none;}
