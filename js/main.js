@@ -1,13 +1,4 @@
 $(document).ready(function() {
-
-    $("#button").click(function() {
-            $('html, body').animate({
-        scrollTop: $("#how-it-works").offset().top
-        }, 2000);
-    });
-
-   
-
     $('#contact_form').bootstrapValidator({
         // To use feedback icons, ensure that you use Bootstrap v3.1.0 or later
         feedbackIcons: {
@@ -90,7 +81,7 @@ $(document).ready(function() {
             }
             }
         })
-    
+
         .on('success.form.bv', function(e) {
             $('#success_message').slideDown({ opacity: "show" }, "slow") // Do something ...
                 $('#contact_form').data('bootstrapValidator').resetForm();
@@ -114,10 +105,5 @@ $(document).ready(function() {
         
 });
 
-$(document).on('click', 'a[href^="#"]', function (event) {
-    event.preventDefault();
 
-    $('html, body').animate({
-        scrollTop: $($.attr(this, 'href')).offset().top
-    }, 500);
-    });
+
