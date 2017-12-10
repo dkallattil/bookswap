@@ -134,6 +134,10 @@ h6 {
   padding: 0px 10px;
   color: #000;
 }
+.nav a:hover{
+  color: white;
+  text-decoration: none;
+}
 .nav ul {
   padding: 0;
   margin: 2px 0 0 0;
