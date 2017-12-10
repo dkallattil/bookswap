@@ -1,0 +1,101 @@
+<?php
+	session_start();
+?>
+
+<!DOCTYPE html>
+<html>
+<title> Book Swap - Log In </title>
+<head>
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- jQuery -->
+  <script src="js/jquery.min.js"></script>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <!-- Main.js -->
+  <script src="https://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
+
+  <script type="text/javascript">
+    function checkPass(){
+      if($("#newPass").val() != $("#confirmPass").val()){
+        $("#confirmPass").css("border-color", "red");
+
+      }else{
+        $("#confirmPass").css("border-color", "");
+      }
+    }
+  </script>
+</head>
+<body>
+
+  			<nav class="nav">
+  				<div class="container">
+  					<div class="row">
+  						<div>
+  							<div id="logo"><a href="index.html">Book Swap</a></div>
+  						</div>
+  						<div>
+  							<ul>
+  							</ul>
+  						</div>
+  					</div>
+  				</div>
+  			</nav>
+
+  			<div id="header" data-section="home" class="cover" style="background-image:url(images/library_bg.jpg);">
+  				<div class="overlay"></div>
+  				 <div class="container" style="position: relative; margin-top: 7%; margin-left: 32%;">
+
+
+
+        <form class="well form-horizontal" onsubmit="validate()" action="php/login.php" method="post" id="contact_form">
+          <fieldset>
+
+
+
+            <!-- Text input-->
+
+            <div class="form-group">
+              <label class="col-md-4 control-label">Username</label>
+              <div class="col-md-4 inputGroupContainer">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                  <input name="user_name" placeholder="Username" class="form-control" type="text" required>
+                </div>
+              </div>
+            </div>
+
+            <!-- Text input-->
+
+            <div class="form-group">
+              <label class="col-md-4 control-label">Password</label>
+              <div class="col-md-4 inputGroupContainer">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                  <input id="newPass" name="user_password" placeholder="Password" class="form-control" type="password" required>
+                </div>
+              </div>
+            </div>
+
+
+                  <!-- Select Basic -->
+
+                  <!-- Success message -->
+                  <div class="alert alert-success" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i> Success!.</div>
+
+                  <!-- Button -->
+                  <div class="form-group" style="text-align: center">
+                    <label class="col-md-4 control-label"></label>
+                    <div class="col-md-4">
+                      <button type="submit" onclick="checkPass()" class="btn btn-warning">SUBMIT <span class="glyphicon glyphicon-send"></span></button>
+  										<div style="color: white">Don't have an account?</div><a href="signup.html">Sign Up Here</a>
+  								  </div>
+                  </div>
+
+          </fieldset>
+        </form>
+        </div>
+        </div>
+
+</body>
+</html>

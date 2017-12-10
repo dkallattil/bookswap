@@ -68,7 +68,7 @@ h6 {
   color: #ffffff;
   font-size: 20px;
   background: #6b6965;
-  padding: 10px 20px 10px 20px;
+  padding: 20px 30px 20px 30px;
   border: solid #dbdbdb 2px;
   text-decoration: none;
 }
@@ -90,7 +90,7 @@ h6 {
   text-decoration: none;
   position: absolute;
   top: 350px;
-  left: 510px;
+  left: 502px;
 }
 
 .btn-lg:hover {
@@ -118,7 +118,7 @@ h6 {
   padding: 20px 0;
   z-index: 1001;
   background: #dbc6b6;
-  -moz-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.5);
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.15);
 }
 
@@ -183,4 +183,4 @@ h6 {
   position: relative;
   z-index: 10;
 }
-
+#success_message{ display: none;}
