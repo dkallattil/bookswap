@@ -42,7 +42,19 @@ h3 {
 }
 
 
-h4, h5 {
+h4 { 
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  color: white;
+  position: relative;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  text-shadow: 1px 2px #000000;
+
+}
+
+h5 {
   font-family: Arial, sans-serif;
   text-align: center;
   margin-left: auto;
@@ -54,12 +66,16 @@ h6 {
   font-size: 12px;
   color: white;
   position: relative;
-  top: 170px;
+  top: 120px;
   left: auto;
   text-align: center;
   margin-right: auto;
 }
-
+#over img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
 .btn-sm {
   -webkit-border-radius: 5;
   -moz-border-radius: 5;
@@ -90,7 +106,7 @@ h6 {
   text-decoration: none;
   position: absolute;
   top: 350px;
-  left: 502px;
+  left: 480px;
 }
 
 .btn-lg:hover {
@@ -117,9 +133,9 @@ h6 {
   width: 100%;
   padding: 20px 0;
   z-index: 1001;
-  background: #dbc6b6;
-  -moz-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.5);
-  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.15);
+  background: #ffffff;
+  -moz-box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.15);
 }
 
 
@@ -135,7 +151,7 @@ h6 {
   color: #000;
 }
 .nav a:hover{
-  color: white;
+  color: #680f0f;
   text-decoration: none;
 }
 .nav ul {
@@ -178,7 +194,7 @@ h6 {
   top: 0;
   left: 0;
   right: 0;
-  background: rgba(166, 172, 175, 0.5);
+  background: rgba(255, 239, 239, 0.9);
 }
 .cover a:hover {
   color: white;
