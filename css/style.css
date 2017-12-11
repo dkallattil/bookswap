@@ -105,7 +105,7 @@ h6 {
   border: solid #dbdbdb 2px;
   text-decoration: none;
   position: absolute;
-  top: 350px;
+  top: 410px;
   left: 480px;
 }
 
@@ -210,3 +210,13 @@ h6 {
 }
 
 #success_message{ display: none;}
+
+.table, .table-dark>tbody>tr:nth-child(odd)>td, 
+.table, .table-dark>tbody>tr:nth-child(odd)>th {
+   background-color: #6b6965; 
+ }
+
+ .table, .table-dark>tbody>tr:nth-child(even)>td, 
+.table, .table-dark>tbody>tr:nth-child(even)>th {
+   background-color: #6b6965; 
+ }
