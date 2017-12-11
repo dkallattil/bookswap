@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<hmtl>
+<head>
+  <title>Book Swap</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- jQuery -->
+  <script src="js/jquery.min.js"></script>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <!-- Main.js -->
+  <script src="https://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
+
+  <script src="js/Message.js" type="text/javascript"></script>
+  <script src="js/MessageViewer.js" type="text/javascript"></script>
+
+</head>
+<body>
+  <nav class="nav">
+    <div class="container">
+      <div class="row">
+        <div>
+          <div id="logo"><a href="index.html">Book Swap</a></div>
+        </div>
+        <div>
+          <ul>
+            <li>
+              <form action="php/logout.php" method="post">
+              <button type="submit" class="btn-sm" style="color:#ffffff;" >Log Out</button></li>
+            </form>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </nav>
+
+  <div id="header" data-section="home" class="cover" style="background-image:url(images/library_bg.jpg);">
+    <div class="overlay"></div>
+     <div class="container" style="position: relative; margin-top: 7%; margin-left: 5%;">
+
+        <div>
+            <table id="message_list" class="table table-dark" style="float: left;">
+                <thead>
+                  <tr>
+                    <th>User</th>
+                    <th>Message</th>
+                  </tr>
+                </thead>
+                <tbody>
+                 <!--  <tr>
+                    <td>Name</td>
+                    <td>Genre</td>
+                  </tr>
+                  <tr>
+                    <td>Name</td>
+                    <td>Genre</td>
+                  </tr> -->
+                </tbody>
+              </table>
+         </div>
+
+
+
+
+       </div>
+            <!-- Select Basic -->
+
+            <!-- Success message -->
+            <div class="alert alert-success" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i> Success!.</div>
+
+
+        </div>
+    </div>
+
+</body>
+</html>

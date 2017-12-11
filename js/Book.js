@@ -21,5 +21,8 @@ Book.prototype.makeCompactDiv = function() {
     user_div.html(this.username);
     cdiv.append(user_div);
 
+    var button = $("<button onclick='message()'> Message </button>");
+    cdiv.append(button);
+
     return cdiv;
 };
