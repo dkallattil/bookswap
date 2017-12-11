@@ -42,7 +42,19 @@ h3 {
 }
 
 
-h4, h5 {
+h4 { 
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  color: white;
+  position: relative;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  text-shadow: 1px 2px #000000;
+
+}
+
+h5 {
   font-family: Arial, sans-serif;
   text-align: center;
   margin-left: auto;
@@ -54,12 +66,16 @@ h6 {
   font-size: 12px;
   color: white;
   position: relative;
-  top: 170px;
+  top: 120px;
   left: auto;
   text-align: center;
   margin-right: auto;
 }
-
+#over img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
 .btn-sm {
   -webkit-border-radius: 5;
   -moz-border-radius: 5;
@@ -89,8 +105,8 @@ h6 {
   border: solid #dbdbdb 2px;
   text-decoration: none;
   position: absolute;
-  top: 350px;
-  left: 502px;
+  top: 410px;
+  left: 480px;
 }
 
 .btn-lg:hover {
@@ -117,9 +133,9 @@ h6 {
   width: 100%;
   padding: 20px 0;
   z-index: 1001;
-  background: #dbc6b6;
-  -moz-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.5);
-  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.15);
+  background: #fcf5ed;
+  -moz-box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.15);
 }
 
 
@@ -133,6 +149,10 @@ h6 {
 .nav a {
   padding: 0px 10px;
   color: #000;
+}
+.nav a:hover{
+  color: #840505;
+  text-decoration: none;
 }
 .nav ul {
   padding: 0;
@@ -174,7 +194,7 @@ h6 {
   top: 0;
   left: 0;
   right: 0;
-  background: rgba(166, 172, 175, 0.5);
+  background: rgba(232, 224, 215, 0.9);
 }
 .cover a:hover {
   color: white;
@@ -190,3 +210,13 @@ h6 {
 }
 
 #success_message{ display: none;}
+
+.table, .table-dark>tbody>tr:nth-child(odd)>td, 
+.table, .table-dark>tbody>tr:nth-child(odd)>th {
+   background-color: #6b6965; 
+ }
+
+ .table, .table-dark>tbody>tr:nth-child(even)>td, 
+.table, .table-dark>tbody>tr:nth-child(even)>th {
+   background-color: #6b6965; 
+ }
