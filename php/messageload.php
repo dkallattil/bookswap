@@ -22,7 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] == "GET") {
 
     // Interpret <id> as integer
     $message_id = intval($path_components[1]);
-    $result = $mysqli->query("select user_to, user_from, message from Messages where id =". $message_id);
+    $result = $mysqli->query("select user_from, message from Messages where id =". $message_id);
     $id_array = array();
 
     if ($result) {
@@ -40,7 +40,8 @@ if ($_SERVER['REQUEST_METHOD'] == "GET") {
     exit();
 
   }else{
-    $result = $mysqli->query("select id, user_from, message from Messages order by id");
+    $sql = "select id, user_from, message from Messages where user_to = '$current'";
+    $result = $mysqli->query($sql);
     $id_array = array();
     $name_array = array();
     $genre_array = array();
@@ -49,6 +50,8 @@ if ($_SERVER['REQUEST_METHOD'] == "GET") {
       while ($next_row = $result->fetch_array()) {
           $id_array[] = intval($next_row['id']);
       }
+    }else{
+      echo $sql;
     }
 
     print json_encode($id_array);
