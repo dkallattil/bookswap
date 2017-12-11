@@ -1,4 +1,7 @@
 <?php
+session_start();
+
+
 $server = "classroom.cs.unc.edu";
 $username = "jall8597";
 $password = "Annie12345%";
@@ -21,6 +24,7 @@ if($email == ""){
   $insertSql = "INSERT INTO Users (username, password, first_name, last_name, email)
     VALUES ('$username', '$password', '$first', '$last', '$email')";
 }
+$_SESSION['u_id'] = $username;
 
 if($conn->query($insertSql)){
   header("Location: ../bookswap.html?login=success");
