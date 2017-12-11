@@ -18,6 +18,7 @@ $(document).ready(function(){
                   dataType: "json",
                     success: function(book_json, status, jqXHR) {
                       var b = new Book(book_json);
+                      console.log(b);
                       $("#book_list").append(b.makeCompactDiv());
                     }
              });

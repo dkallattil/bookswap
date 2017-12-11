@@ -18,7 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] == "GET") {
 
     // Interpret <id> as integer
     $book_id = intval($path_components[1]);
-    $result = $mysqli->query("select id, name, genre from Books where id =" . $book_id);
+    $result = $mysqli->query("select id, name, genre, username from Books where id =" . $book_id);
     $id_array = array();
 
     if ($result) {
@@ -26,12 +26,14 @@ if ($_SERVER['REQUEST_METHOD'] == "GET") {
         $id_array[] = intval($next_row['id']);
         $id_array[] = $next_row['name'];
         $id_array[] = $next_row['genre'];
+        $id_array[] = $next_row['username'];
       }
     }
 
     $json_obj = array('id' => $id_array[0],
 		      'name' => $id_array[1],
-		      'genre' => $id_array[2]);
+		      'genre' => $id_array[2],
+          'username' => $id_array[3]);
 
 
     print json_encode($json_obj);
